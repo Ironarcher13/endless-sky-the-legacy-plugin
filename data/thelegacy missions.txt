@@ -42,8 +42,8 @@ mission "The Legacy: Treasure Hunters 1"
 			choice
 				`"Yes, that's me"`
 			`	"In that case, you may be just the person we are looking for."`
-			`	He introduces himself: "I am Benoit, and over there are my friends Sherlock, Hercule and Stephan. We are looking for a trustworthy and reliable captain who will transport us on a rather delicate mission."`
-			`	He looks at you rather conspicuously and whispers: "We will solve the mystery of 'Rhon the Traveler'!"`
+			`	He introduces himself: "I am Benoit, and over there are my friends Sherlock, Hercule, and Stephan. We are looking for a trustworthy and reliable captain who can transport us on a rather delicate mission."`
+			`	He looks at you rather conspicuously and whispers: "We want to solve the mystery of 'Rhon the Traveler'!"`
 			`	You have no idea who Rhon the Traveler is, but the fancy restaurant and the impression that Benoit and his friends leave indicate that this could be a rather lucrative opportunity.`
 			choice
 				`	"Okay, tell me more."`
@@ -60,19 +60,19 @@ mission "The Legacy: Treasure Hunters 1"
 				`	"Sounds interesting. What would I have to do?"`
 				`	"I'm sorry, but I am not really interested into chasing phantoms."`
 					goto "not interested 1"
-			`	"Well, you would have to take us to the legacy disclosure, where all interested parties receive the first clue. This will be in the Kugel system and we will pay you <payment> just to take us there."`
+			`	"Well, you would have to take us to the legacy disclosure, where all interested parties receive the first clue. This will be in the Kugel system and we will pay you <payment> to take us there."`
 			`	With a smile he continues: "After that, it depends on where the clues will take us. I would not be surprised if this will become a chase through the entire known galaxy. And maybe even beyond..."`
 			`	His expression becomes earnest.`
 			`	"I fear, it will also draw attention from some rather unpleasant and violent subjects. Therefore, you and your ship must be up to the task."`
 			choice
-				`	"So far, so good. But what is in it for me?"`
+				`	"So far, so good. But what's in it for me?"`
 				`	"Sorry, but this sounds rather dubious to me. You have to look for someone else."`
 					goto "not interested 1"
-			`	"Well, we will pay you for all your costs, no matter the outcome. But what might really pique your interest - Rhon's ship is also part of the inheritance. Since none of my group has any use for such a device, the ship would be yours, in case we succeed. That and 5 percent of the rest of the inheritance."`
+			`	"Well, we will pay you for all your costs, no matter the outcome. But what might really pique your interest - Rhon's ship is also part of the inheritance. Since none of my group has any use for such a device, the ship would be yours, in the case that we succeed. That and 5 percent of the rest of the inheritance."`
 			choice
-				`	"That surely sounds interesting. Count me in"`
+				`	"That surely sounds interesting. Count me in."`
 					goto "count me in"
-				`	"Give me the ship and 10 percent and we have a deal"`
+				`	"Give me the ship and 10 percent and we have a deal."`
 				`	"I'm sorry, but that sounds a bit too risky for me."`
 					goto "not interested 1"
 			`	He considers your offer for a moment and then reaches a decision. `
@@ -115,16 +115,15 @@ mission "The Legacy: Treasure Hunters 2"
 	destination "TL Disclosure site"
 	on offer
 		conversation
-			`When you look for your passengers in the Spaceport, they are easy to spot. Each of them commands a wagon full of electronic equipment.`
-			`	You recognize some rather fancy hardware and wonder how much money they spent on these devices. `
+			`When you look for your passengers in the Spaceport, they are easy to spot. Each of them commands a wagon full of electronic equipment. You recognize some rather fancy hardware and wonder how much money they spent on these devices. `
 			`	Benoit greets you: "So, are you ready for the flight to the Kugel system?"`
 			`	You cannot help but wonder: "I am. But you are aware that the Kugel system is an uninhabited system with no planets to land upon?"`
-			`	He smiles at you. "Rhon always aimed for the special and the surprising. Just take us to the system and you will see. Oh, and make sure we arrive there in 3 days, else we are going to miss the big moment!"`
+			`	He smiles at you, "Rhon always aimed for the special and the surprising. Just take us to the system and you will see. Oh, and make sure we arrive there in 3 days, else we are going to miss the big moment!"`
 				accept
 	on enter "Kugel"
 		dialog `When you enter the <system> system, you notice dozens of ships in the system. Many converge towards a small asteroid.`
 		dialog `	To your surprise your computer indicates that you can land on the asteroid.`
-		dialog `	You queue up and after several hours of waiting, you finally get the permission to land.`
+		dialog `	You queue up and after several hours of waiting, you finally get permission to land.`
 	on fail
 		dialog `You did not reach the destination on time. Your party is very angry and arranges for alternative transportation.`
 		event "the legacy was aborted"
@@ -135,8 +134,8 @@ mission "The Legacy: Treasure Hunters 2"
 	on complete
 		conversation
 			`The landing platforms on the asteroid facility are busier than a beehive. You send the treasure hunters on their way.`
-			`	"Good luck with the hunt. I am sorry, but I will have to depart again, I am only allowed to block the landing slot for 15 minutes"`
-			`	Benoit nods. "That is okay, Captain <last>. But please make sure you stay in the system until we call for you."`
+			`	"Good luck with the hunt. I am sorry, but I will have to depart again, I am only allowed to block the landing slot for 15 minutes."`
+			`	Benoit nods, "That is okay, Captain <last>. But please make sure you stay in the system until we call for you."`
 
 mission "The Legacy: Hang around"
 	landing
@@ -202,7 +201,7 @@ mission "The Legacy: Treasure Hunters 3"
 			`	Benoit approaches you, waves the tube towards you and says: "Please get us out of here as fast as possible, so we can start looking at this with our equipment and without prying eyes."`
 			`	You respond: "Okay, so where should I take you then?"`
 			`	Benoit thinks for a moment and then gives you a mischievous look. "Hmm... You know what, I believe you should participate in the guessing game, to earn your share. I will describe you the target, let us see if you can guess it."`
-			`	"For our studies we want to retreat to my own private island. It is on a planet consisting mostly of water, so even the spaceport is on its own city-ship. And it is not exactly cheap to live there."`
+			`	"For our studies we want to retreat to my private island. It is on a planet consisting mostly of water, so even the spaceport is on its own floating city-ship. And it is not exactly cheap to live there."`
 			`	"Any idea where you should take us?"`
 			choice
 				`	"Yes, I know where you want to be taken."`
@@ -239,7 +238,7 @@ mission "The Legacy: Treasure Hunters 4"
 		require "Jump Drive"
 		event "the legacy disclosure done"
 		conversation
-			`When you call Benoit, he seems to be in deep thoughts. "Ah, Captain <last>. This seems to be more of a challenge than we imagined. I would like you to pick up some additional supplies for us. The CEO of the largest CPU manufacturing company is a good friend of mine and he will give me a couple of their latest toys. Can you pick them up before <day>?"`
+			`When you call Benoit, he seems to be in deep thoughts. "Ah, Captain <last>. This seems to be more of a challenge than we imagined. I would like you to pick up some additional supplies for us. The CEO of the largest CPU manufacturer is a good friend of mine and has agreed to give me a couple of their latest toys. Can you pick them up before <day>?"`
 			choice
 				`"Sure, I'd be happy to."`
 					goto "okay"
